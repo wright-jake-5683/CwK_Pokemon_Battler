@@ -18,7 +18,7 @@ class Scratch(Moves):
     def __init__(self, pokemonType):
         super().__init__("Scratch", "Normal", 40, pokemonType)
 
-class Vinewhip(Moves):
+class VineWhip(Moves):
     def __init__(self, pokemonType):
         super().__init__("Vine Whip", "Grass", 45, pokemonType)
 

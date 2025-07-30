@@ -43,7 +43,7 @@ class Pokemon:
 
 class Bulbasaur(Pokemon):
     def __init__(self, name):
-        super().__init__(name, "Bulbasaur", "Grass", "Fire", ["Grass", "Water"], ["Tackle", "Vine Whip"])
+        super().__init__(name, "Bulbasaur", "Grass", "Fire", ["Grass", "Water"], ["Tackle", "VineWhip"])
 
 class Charmander(Pokemon):
     def __init__(self, name):
@@ -51,4 +51,4 @@ class Charmander(Pokemon):
 
 class Squirtle(Pokemon):
     def __init__(self, name):
-        super().__init__(name, "Squirtle", "Water", "Grass", ["Water", "Fire"], ["Tackle", "Water Gun"])
+        super().__init__(name, "Squirtle", "Water", "Grass", ["Water", "Fire"], ["Tackle", "WaterGun"])

@@ -70,9 +70,12 @@ def explorePrep(team):
 #---------------------------------------------------------------
 
 def viewTeam(team):
-    for poke in team:
-        print(f"{poke.name} - Species: {poke.species}")
-        print("--------------------------------")
+    if not team:
+        print("There are currently no pokemon on your team")
+    else:
+        for poke in team:
+            print(f"{poke.name} - Species: {poke.species}")
+            print("--------------------------------")
     action = ""
     return action, team
 

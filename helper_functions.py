@@ -133,12 +133,12 @@ def startFight(team, fight):
                 poke = acquirePokemon(enemy, name)
                 team.append(poke)
                 fight = False
-                result = "lost"
+                result = "won"
             elif (character.health == 0):
                 print("You have been defeated...")
                 team.remove(character)
                 fight = False
-                result = "won"
+                result = "lost"
         return result
 
 #---------------------------------------------------------------
@@ -147,7 +147,7 @@ def playerMove(character):
     for move in character.moveSet:
         print(f"{character.moveSet.index(move) + 1}). {move}")
     selection = int(input())
-    if (selection in range(len(character.moveSet) - 1)):
+    if (selection in range(len(character.moveSet) + 1)):
         move = getattr(moves, character.moveSet[selection - 1])
     else:
         print(f"Value entered is out of range of available move options. Defaulting to basic move...")

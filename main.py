@@ -12,7 +12,7 @@ while (play == True):
         case "Explore":
             while (action == "Explore"):
                 if not team:
-                    print("You have no pokemon left on your team, returning to main lobby...")
+                    print("You have no pokemon left on your team, returning to Pokemon Center...")
                     action = ""
                 else:
                     hf.startFight(team, True)

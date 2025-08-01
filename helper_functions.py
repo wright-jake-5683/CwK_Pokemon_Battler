@@ -73,6 +73,8 @@ def viewTeam(team):
     for poke in team:
         print(f"{poke.name} - Species: {poke.species}")
         print("--------------------------------")
+    action = ""
+    return action, team
 
 #---------------------------------------------------------------
 
@@ -90,7 +92,7 @@ def mainLobby(team):
                 case 1: 
                     return explorePrep(team)
                 case 2:
-                    viewTeam(team)
+                    return viewTeam(team)
         else:
             return "", team
     except ValueError:

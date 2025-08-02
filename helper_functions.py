@@ -90,7 +90,7 @@ def mainLobby(team):
     print()
     try:
         optionSelected = int(input())
-        if (optionSelected in range(len(options)) and isinstance(optionSelected, int)):
+        if (optionSelected in range(len(options) + 1) and isinstance(optionSelected, int)):
             match (optionSelected):
                 case 1: 
                     return explorePrep(team)

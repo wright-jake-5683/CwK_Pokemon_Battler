@@ -133,7 +133,7 @@ def startFight(team, fight):
                 result = "lost"
             elif (enemy.health == 0):
                 print("Enemy has been defeated...")
-                print(f"You have acquired a new {enemy.species}. Please give your new pokemon a new:")
+                print(f"You have acquired a new {enemy.species}. Please give your new pokemon a name:")
                 name = input()
                 poke = acquirePokemon(enemy, name)
                 team.append(poke)

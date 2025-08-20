@@ -16,12 +16,10 @@ while (play == True):
                     action = ""
                 else:
                     hf.startFight(team, True)
-                    answer = int(input("Press 1 to keep Exploring or any other button to return to the Pokemon Center: \n"))
-                    if (answer == 1):
-                        action = "Explore"
-                    elif (isinstance(answer, int)):
-                        action = ""
-                    else:
-                        print("Please enter a valid integer")
-                
-    
+                    answer = input("Press 1 to keep exploring or press any other button to return to the Pokemon Center: \n")
+                    try:
+                        if (int(answer) != 1):
+                            action = ""
+                    except ValueError:
+                            action = ""
+            
